@@ -1,0 +1,481 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+  font-weight: lighter;
+	line-height: 1.6;
+	color: #3a3a3a;
+  background-color: white;
+}
+
+p {
+	font-size: 16px;
+  color: rgb(60, 60, 60);
+}
+
+.jibs {
+  color: lightblue;
+}
+
+h2 {
+  margin-top: 0;
+  color: #1084c7;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+h6 {
+  color: #1084c7;
+  text-align: left;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.latest-events {
+  color: #234681;
+  font-weight: lighter;
+  font-size: 2.5em;
+}
+
+a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.location-search {
+  color: white;
+  padding: 10px;
+}
+
+.more {
+  display: block;
+  color: #1c3867;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 1.1em;
+  border: 1px solid #1c3867;
+  padding: 5px 20px;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.social {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 9px 11px 4px;
+  margin: 5px;
+  margin-bottom: 5em;
+}
+.register {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 9px 100px 4px;
+  margin: 5px;
+}
+
+.upcoming {
+  margin-bottom: 60px;
+}
+
+.subscribe {
+  font-size: 15px;
+  border: 1px solid white;
+  padding: 10px 120px;
+}
+
+.services {
+    color: white;
+}
+
+.mail{
+  color: rgb(60, 60, 60);
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  float: left;
+  font-size: 1.8rem;
+  margin: 0;
+  margin-left: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.main-nav {
+  float: right;
+	margin-top: 5px;
+  margin-right: 20px;
+}
+
+.name a,
+.main-nav a {
+  text-align: center;
+  padding: 0;
+}
+
+.main-nav a {
+  font-size: .95em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  padding-bottom: 7px;
+}
+
+.main-nav a:hover {
+  color: white;
+  border-bottom: 1px solid dodgerblue;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  height: 80px;
+	padding-top: .5em;
+	padding-bottom: .1em;
+  background: #1c3867;
+}
+
+.banner,
+.main-footer,
+.banner-bot,
+.container {
+	text-align: center;
+}
+
+.banner {
+	color: #fff;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+  background: #095ea1 url(../images/conference.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
+.col {
+  text-align: left;
+  padding-top: 0;
+	padding-right: 1em;
+	padding-left: 1em;
+  margin-bottom: 4em;
+}
+
+
+.banner-bot {
+  color: white;
+  background: #1084c7;
+  padding: 3.2em 2em;
+  margin-bottom: 0;
+
+}
+.main-footer {
+	background: white;
+	padding: 2em 2em 0 2em;
+	margin-top: 0;
+}
+
+/* ---- Page Elements ---- */
+
+.services li {
+  padding: 1.6em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid white;
+}
+
+.services {
+  margin-bottom: 4em;
+}
+
+
+.headline {
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: 1px;
+	border: 1px solid white;
+  margin: 1em;
+  padding: 1em 2em;
+}
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (max-width: 769px) {
+    .main-nav {
+      display: none;
+    }
+
+
+}
+
+@media (min-width: 769px) {
+
+    body p {
+      font-size: 1.2em;
+    }
+
+    body h2 {
+      font-size: 1.8em;
+    }
+
+    .main-nav a {
+      font-size: .95em;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid white;
+    }
+
+    .main-nav li {
+      float: left;
+      margin-left: 0;
+      padding-right: 15px;
+    }
+
+    .main-nav {
+      padding-top: 1em;
+      margin-right: 0;
+    }
+
+    .banner {
+      padding-top: 15em;
+      position: relative;
+      max-width: 2400px;
+      margin: 0 auto;
+    }
+
+    .main-header {
+      position: fixed;
+      box-shadow: 0 1px 4px rgba(0,0,0,.4);
+      width: 100%;
+      height: 5em;
+      top: 0;
+      z-index: 100;
+    }
+
+    .headline {
+      padding: 0.1em 2em;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .latest-events {
+      padding: 30px;
+      padding-bottom: 0;
+      letter-spacing: 3px;
+
+    }
+
+    .name {
+      float: left;
+      margin-left: 0 auto;
+      padding: 0;
+    }
+
+    .primary,
+    .secondary {
+      float: left;
+      overflow: hidden;
+      width: 50%;
+    }
+
+    .secondary p {
+      padding-top: auto;
+    }
+
+    .tertiary {
+      display: flow-root;
+      width: 90%;
+      padding-left: 80px;
+    }
+
+    .social-buttons {
+      position: absolute;
+      top: 6em;
+      right: 2em;
+    }
+
+    .services li {
+      display: inline-block;
+      vertical-align: top;
+      border-bottom: none;
+      width: 30%;
+      margin-bottom: 150px;
+      font-size: 1.2em;
+      letter-spacing: 1px;
+    }
+
+    .left {
+      text-align: right;
+    }
+
+    .right{
+      text-align: left;
+    }
+
+    .location-search {
+      max-width: 500px;
+      width: 50%;
+      border-bottom: 1px solid white;
+      letter-spacing: 5px;
+      font-size: 40px;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 100px;
+      left: 0;
+      right: 0;
+      bottom: 0.2em;
+    }
+
+    .upcoming,
+    .subscribe {
+      display: inline-block;
+      margin-right: 1em;
+    }
+
+    .upcoming {
+      padding-left: 20px;
+    }
+
+    .main-footer {
+      padding-bottom: 0;
+    }
+
+    .footer-list li {
+      float: left;
+      padding: 20px;
+    }
+
+    .address {
+      width: 35%;
+      text-align: right;
+    }
+
+    .jibs {
+      width: 30%;
+      font-size: 10px;
+    }
+
+    .contact {
+      width: 35%;
+      padding-right: 0;
+    }
+
+    .social-bot {
+      float:right;
+      border: 1px solid blue;
+      padding: 5px 10px;
+      margin: 10px;
+    }
+
+}
+
+  @media (min-width: 1025px) {
+
+    .main-nav a {
+      font-size: .95em;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      padding-bottom: 7px;
+      padding-right: 30px;
+      padding-left: 30px;
+      border-bottom: 1px solid white;
+    }
+
+    .banner {
+      position: relative;
+      max-width: 2400px;
+      margin: 0 auto;
+    }
+
+    .main-header {
+      position: fixed;
+      box-shadow: 0 1px 4px rgba(0,0,0,.4);
+      width: 100%;
+      height: 5em;
+      top: 0;
+      z-index: 100;
+    }
+
+
+    .container {
+	  	max-width: 2400px;
+  	}
+
+    .name {
+      float: left;
+      margin-left: 0 auto;
+      padding: 0;
+    }
+
+    .main-nav {
+      float: right;
+      padding-top: 1em;
+    }
+
+    .main-nav li {
+      float: left;
+      margin-left: 0;
+      padding-right: 15px;
+    }
+
+    .primary,
+    .secondary,
+    .tertiary {
+      width: 33%;
+    }
+
+    .tertiary {
+      padding-left: 15px;
+
+    }
+
+    .col {
+      float: left;
+    }
+
+    .jibs {
+      margin-left: 200px;
+    }
+
+    .contact {
+      width: 20%;
+
+      margin-left: 80px;
+    }
+
+  }
+
+  /* ---- Float clearfix ---- */
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+}
